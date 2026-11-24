@@ -3,7 +3,7 @@ name: CFD figyelő
 on:
   schedule:
     # Ötpercenként, hétköznap, UTC 12 és 21 óra között (a nyári és téli idő miatt tágabb).
-    - cron: "*/5 12-21 * * 1-5"
+    - cron: "*/5 * * * 0-5"
   workflow_dispatch:
     inputs:
       teszt:
